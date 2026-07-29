@@ -4,6 +4,6 @@
 brew install truocloud/tap/truo
 ```
 
-CLI de la API publica de TruoCloud. Documentacion: https://docs.truo.cloud — codigo: https://github.com/truocloud/truo-devkit
+The `truo` CLI for the TruoCloud public API. Docs: https://docs.truo.cloud — source: https://github.com/truocloud/truo-devkit
 
-La formula (`Formula/truo.rb`) la genera el workflow de release de `truo-devkit`; no se edita a mano.
+The formula (`Formula/truo.rb`) is generated and updated by the `truo-devkit` release workflow; do not edit it by hand.
