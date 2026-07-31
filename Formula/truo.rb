@@ -2,28 +2,28 @@
 class Truo < Formula
   desc "TruoCloud CLI: VPS, DNS, databases, containers and load balancers"
   homepage "https://docs.truo.cloud/cli"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/truocloud/truo-devkit/releases/download/v0.3.0/truo-darwin-arm64"
-      sha256 "7e8ca84d74be560765c2236ddc6b5be2a2c13ba44dc9264e04a922f5da8c6406"
+      url "https://github.com/truocloud/truo-devkit/releases/download/v0.4.0/truo-darwin-arm64"
+      sha256 "5282dfe4f64e26d8777b8c363e6ac9ad6a267412939bbbb6a89f02ec48d1236e"
     end
     on_intel do
-      url "https://github.com/truocloud/truo-devkit/releases/download/v0.3.0/truo-darwin-x64"
-      sha256 "6323fe440a75507cdb0ecd178cff32bc2d955eadd19bd4522aed09f04b378261"
+      url "https://github.com/truocloud/truo-devkit/releases/download/v0.4.0/truo-darwin-x64"
+      sha256 "f2960b67610d856c8ea9f854b29cdcdcf0fff3397a92a4ea19f7294faeee5647"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/truocloud/truo-devkit/releases/download/v0.3.0/truo-linux-arm64"
-      sha256 "dcaf307b5f9e56bba0e6d7e0b7f4f2b0050639a661275f7baed51a10a2a81d24"
+      url "https://github.com/truocloud/truo-devkit/releases/download/v0.4.0/truo-linux-arm64"
+      sha256 "4aa20add90dc1f822ef253502abaca822ea8b4c8c4dbfe7c134b3a53cfcabb10"
     end
     on_intel do
-      url "https://github.com/truocloud/truo-devkit/releases/download/v0.3.0/truo-linux-x64"
-      sha256 "789a8d0667b80aac0afcca849ac49741367d1092b2c8504ba26448baeeb30370"
+      url "https://github.com/truocloud/truo-devkit/releases/download/v0.4.0/truo-linux-x64"
+      sha256 "0f44514f72b325599978fe6f7ee60cf595cb37b91d04c9c56d76500088183aea"
     end
   end
 
@@ -33,6 +33,6 @@ class Truo < Formula
   end
 
   test do
-    assert_match "0.3.0", shell_output("#{bin}/truo --version")
+    assert_match "0.4.0", shell_output("#{bin}/truo --version")
   end
 end
